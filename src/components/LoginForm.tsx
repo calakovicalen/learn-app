@@ -1,5 +1,11 @@
 function LoginForm() {
-  return <div>LoginForm</div>;
+  return (
+    <form>
+      <input />
+      <input />
+      <button />
+    </form>
+  );
 }
 
 export default LoginForm;
