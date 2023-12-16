@@ -5,11 +5,13 @@ import Input from "./Input";
 import UserIcon from "../../assets/icons/UserIcon";
 import LockIcon from "../../assets/icons/LockIcon";
 import EyeIcon from "../../assets/icons/EyeIcon";
+import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate();
 
   const handleNameChange = (value: string) => {
     setName(value);
@@ -28,6 +30,9 @@ function LoginForm() {
 
     if (name && password) {
       console.log("Form valid");
+      setName("");
+      setPassword("");
+      navigate("/");
     }
   };
 
