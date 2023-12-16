@@ -28,7 +28,7 @@ function Input(props: InputProps) {
           value={value}
           onChange={handleChange}
           placeholder={placeholder}
-          className="outline-none px-11 h-11 font-poppins font-normal font-base bg-neutral-200 rounded-md "
+          className="outline-none px-11 h-11 font-poppins font-normal font-base bg-neutral-200 rounded-md hover:text-neutral-900 focus:text-neutral-900 focus:bg-white"
         />
         {secondIcon}
       </div>

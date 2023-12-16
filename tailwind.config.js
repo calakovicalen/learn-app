@@ -7,6 +7,9 @@ export default {
       montserrat: "Montserrat, sans-serif",
       poppins: "Poppins, sans-serif",
     },
+    fontSize: {
+      "2.5xl": "2rem",
+    },
     extend: {
       width: {
         85: "22.188rem",

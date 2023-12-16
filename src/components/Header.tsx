@@ -5,7 +5,7 @@ function Header() {
   const navigate = useNavigate();
 
   return (
-    <div className="px-6 py-2.5 flex justify-center relative sm:place-content-between sm:px-4 sm:pr-6 sm:py-2 sm:rounded-md sm:border-[1px] sm:border-neutral-300 ">
+    <div className="fixed w-full px-6 py-2.5 flex justify-center sm:place-content-between sm:px-4 sm:pr-6 sm:py-2 sm:rounded-md sm:border-[1px] sm:border-neutral-300 ">
       <i
         className="fa-solid fa-ellipsis fa-2xl absolute top-5.5 left-5.5 sm:hidden"
         style={{ color: "#6355d8", width: "24px", height: "24px" }}
