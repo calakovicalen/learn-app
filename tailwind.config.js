@@ -21,6 +21,7 @@ export default {
         "primary-550": "#4D3ED3FF",
         "primary-600": "#3D2DC7FF",
         "neutral-550": "#6E7787FF",
+        "neutral-250": "#EAECEFFF",
       },
       spacing: {
         5.5: "22px",
