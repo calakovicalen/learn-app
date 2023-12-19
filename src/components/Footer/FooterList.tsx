@@ -13,7 +13,10 @@ function FooterList(props: FooterListProps) {
       </h5>
       <ul className="flex flex-col gap-3">
         {list.map((item, index) => (
-          <li key={index} className="text-sm font-poppins text-neutral-900">
+          <li
+            key={index}
+            className="text-sm cursor-pointer font-poppins text-neutral-900 hover:text-neutral-700"
+          >
             {item}
           </li>
         ))}

@@ -1,3 +1,4 @@
+import Select from "../ui/Select";
 import FooterList from "./FooterList";
 
 function Footer() {
@@ -12,15 +13,21 @@ function Footer() {
         <FooterList heading="Company" list={["About us", "Contact us"]} />
       </div>
 
-      <select className="bg-neutral-250 text-sm rounded-md py-1 pl-3 pr-8 font-poppins outline-none focus:bg-white">
-        <option>English</option>
-        <option>Serbian</option>
-      </select>
+      <Select options={["English", "Serbian"]} />
 
-      <div>
-        <i className="fa-brands fa-facebook" style={{ color: "#6355d8" }}></i>
-        <i className="fa-brands fa-youtube" style={{ color: "#6355d8" }}></i>
-        <i className="fa-brands fa-twitter" style={{ color: "#6355d8" }}></i>
+      <div className="mt-12 flex gap-5">
+        <i
+          className="fa-brands fa-facebook h-5 w-5 cursor-pointer"
+          style={{ color: "#6355d8" }}
+        ></i>
+        <i
+          className="fa-brands fa-youtube h-5 w-5 cursor-pointer"
+          style={{ color: "#6355d8" }}
+        ></i>
+        <i
+          className="fa-brands fa-twitter h-5 w-5 cursor-pointer"
+          style={{ color: "#6355d8" }}
+        ></i>
       </div>
 
       <div>
