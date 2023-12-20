@@ -15,9 +15,9 @@ function Select({ options }: SelectProps) {
   };
 
   return (
-    <div>
+    <div className="xl:justify-self-center">
       <div
-        className="text-sm flex w-32 cursor-pointer items-center justify-between rounded-md bg-neutral-250 px-3 py-2 font-poppins hover:bg-white"
+        className="flex w-32 cursor-pointer items-center justify-between rounded-md bg-neutral-250 px-3 py-2 font-poppins text-sm hover:bg-white "
         onClick={() => setIsVisible(!isVisible)}
       >
         {value} <ArrowDown />

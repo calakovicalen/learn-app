@@ -25,7 +25,7 @@ function LoginForm() {
     setIsVisible(!isVisible);
   };
 
-  const handleSubmit: MouseEventHandler<HTMLButtonElement> = event => {
+  const handleSubmit: MouseEventHandler<HTMLButtonElement> = (event) => {
     event.preventDefault();
 
     if (name && password) {
@@ -37,7 +37,7 @@ function LoginForm() {
   };
 
   return (
-    <form className="w-85">
+    <form className="w-Sz21.5">
       <Input
         onChange={handleNameChange}
         value={name}
@@ -56,20 +56,18 @@ function LoginForm() {
         type={isVisible ? "text" : "password"}
       />
 
-      <div className="text-center mt-6">
+      <div className="text-center">
         <button
           onClick={handleSubmit}
           disabled={name && password ? false : true}
-          className="disabled:cursor-not-allowed mb-[1.8125rem] py-3 w-full text-white bg-primary-500 text-base font-poppins font-normal rounded-md hover:bg-primary-550 active:bg-primary-600 disabled:opacity-40"
+          className="mt-s7 rounded-m font-body text-t4 mb-s8 w-full bg-primary-500 py-3 font-normal text-white hover:bg-primary-550 active:bg-primary-600 disabled:cursor-not-allowed disabled:opacity-40"
         >
           Sign In
         </button>
-        <p className="font-poppins font-bold font-xs text-neutral-550 mb-[1.125rem]">
-          OR
-        </p>
-        <p className="font-poppins font-sm font-normal text-neutral-900">
+        <p className="font-t2 mb-s5 font-body font-bold text-neutral-550">OR</p>
+        <p className="font-t3 font-body font-normal text-neutral-900">
           Don't have an account?{" "}
-          <span className="text-primary-500 hover:text-primary-550 font-bold">
+          <span className="font-bold text-primary-500 hover:text-primary-550">
             Sign up
           </span>
         </p>

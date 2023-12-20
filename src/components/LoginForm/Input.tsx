@@ -20,15 +20,15 @@ function Input(props: InputProps) {
 
   return (
     <>
-      <label className="font-poppins font-bold font-xs">{label}</label>
-      <div className="flex flex-col relative mb-3.5 ">
+      <label className="font-body font-t2 font-bold">{label}</label>
+      <div className="relative flex flex-col ">
         {icon}
         <input
           type={type}
           value={value}
           onChange={handleChange}
           placeholder={placeholder}
-          className="outline-none px-11 h-11 font-poppins font-normal font-base bg-neutral-200 rounded-md hover:text-neutral-900 focus:text-neutral-900 focus:bg-white"
+          className="font-t4 pl-s12 h-Sz12 font-body rounded-m mb-s4 bg-neutral-200 pr-5 outline-none hover:text-neutral-900 focus:bg-white focus:text-neutral-900"
         />
         {secondIcon}
       </div>
